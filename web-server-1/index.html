@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Server 1</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color:white;
+}
+.container{
+  max-width:1000px;
+  margin:60px auto;
+  padding:40px;
+  background:rgba(255,255,255,0.12);
+  border-radius:25px;
+  box-shadow:0 0 30px rgba(0,0,0,0.4);
+}
+.badge{
+  display:inline-block;
+  background:#00e5ff;
+  color:#00343d;
+  padding:10px 20px;
+  border-radius:30px;
+  font-weight:bold;
+}
+h1{
+  font-size:50px;
+}
+.card{
+  background:rgba(255,255,255,0.15);
+  padding:20px;
+  margin:15px 0;
+  border-radius:18px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+}
+.footer{
+  text-align:center;
+  margin-top:30px;
+  opacity:0.8;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <span class="badge">ACTIVE BACKEND NODE</span>
+  <h1>☁ Web Server 1</h1>
+  <h2>Cloud Service Node</h2>
+
+  <div class="card">
+    <h3>About Project</h3>
+    <p>This server is part of an HAProxy Load Balancing project. 
+    The load balancer receives traffic through one public IP and forwards requests to backend servers using the Round Robin algorithm.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>Node Role</h3><p>Backend Pool Server 1</p></div>
+    <div class="card"><h3>Status</h3><p>Online and Ready</p></div>
+    <div class="card"><h3>Algorithm</h3><p>Round Robin</p></div>
+    <div class="card"><h3>Monitoring</h3><p>HAProxy Stats Enabled</p></div>
+  </div>
+
+  <div class="card">
+    <h3>Architecture</h3>
+    <p>User → Public IP → HAProxy Load Balancer → Web Server Pool</p>
+  </div>
+
+  <div class="footer">
+    HAProxy Load Balancer Project | Server 1
+  </div>
+</div>
+</body>
+</html>
